@@ -4,6 +4,12 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+
+   <TodoDay />
+
+
+
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -15,11 +21,24 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          don't waste your life 
         </a>
       </header>
     </div>
   );
 }
 
+function TodoDay() {
+return(
+
+<li>
+<span>V</span>
+<p>Wake up</p>
+<p>X</p>
+
+</li>
+
+);
+
+}
 export default App;
