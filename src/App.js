@@ -1,47 +1,32 @@
-import logo from './logo.svg';
+import { TodoCounter } from './TodoCounter';
+import { TodoSearch } from './TodoSearch';
+import { TodoList } from './TodoList';
+import { CreateTodoButton } from './CreateTodoButton';
+import { TodoDay } from './TodoDay';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
 
+<TodoCounter /> 
+<TodoSearch />
+
+
+<TodoList>
+
    <TodoDay />
    <TodoDay />
    <TodoDay />
   
+   </TodoList>
 
 
+<CreateTodoButton />
 
-
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          don't waste your life 
-        </a>
-      </header>
     </div>
   );
 }
 
-function TodoDay() {
-return(
 
-<li>
-<span>V</span>
-<p>Wake up</p>
-<p>X</p>
-
-</li>
-
-);
-
-}
 export default App;
