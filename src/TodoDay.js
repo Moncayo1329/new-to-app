@@ -1,8 +1,8 @@
-function TodoDay() {
+function TodoDay(props) {
     return(
     <li>
-    <span>V</span>
-    <p>Wake up</p>
+    <span>V </span>
+    <p>{props.text}</p>
     <span>X</span>
     </li>
     );
