@@ -4,7 +4,7 @@ import { TodoList } from './TodoList';
 import { CreateTodoButton } from './CreateTodoButton';
 import { TodoDay } from './TodoDay';
 import React from 'react';
-import './App.css';
+
 
 const misTareasTodos = [
 { text: 'Leer la biblia', completed:true},
@@ -18,7 +18,7 @@ const misTareasTodos = [
 
 function App() {
   return (
-    <React.Fragment>
+    <>
 
 <TodoCounter completed={8} total={12} /> 
 
@@ -39,7 +39,7 @@ completed={todo.completed}/>
 
 <CreateTodoButton />
 
-    </React.Fragment>
+    </>
   );
 }
 

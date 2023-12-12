@@ -1,9 +1,16 @@
+import { FaCheck } from "react-icons/fa"; 
+import { TiDelete } from "react-icons/ti";
+
+
+
 function TodoDay(props) {
     return(
     <li>
-    <span>V </span>
-    <p>{props.text}</p>
-    <span>X</span>
+    <span><FaCheck /></span>
+    <p className="TodoDay-p 
+    TodoDay-p--complete">        
+        {props.text}</p>
+    <span><TiDelete /></span>
     </li>
     );
     }
