@@ -1,13 +1,19 @@
+import React from "react";
+
 function TodoSearch() {
+const [searchValue, setSearchValue] = React.
+useState('');
+console.log('Usuarios made the day ' + searchValue)
+
+
     return(
     <input
      placeholder="Ir al gym"
           className='TodoSearch'
+          value={searchValue}
          onChange={(event) => {
-            console.log('Escribiste en search');
-            console.log(event);
-            console.log(event.target);
-            console.log(event.target.value);
+            setSearchValue(event.target.value);
+           
 
           } 
         }
@@ -17,3 +23,4 @@ function TodoSearch() {
 
 
 export {TodoSearch}
+
