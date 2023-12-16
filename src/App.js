@@ -26,6 +26,17 @@ useState('');
 const completedTodos = todos.filter(todo => !!todo.completed).length;
 const totalTodos = todos.length;
 
+const searchedTodos = todos.filter(
+(todo) => {
+
+  const todoText = todo.text.toLocaleLowerCase();
+  const searchText = searchValue.toLowerCase();
+ return  todoText.includes
+ (searchText);
+}
+
+);
+
 
 
 
@@ -44,7 +55,7 @@ setSearchValue={setSearchValue}
 
 
 <TodoList>
-{misTareasTodos.map(todo => ( 
+{searchedTodos.map(todo => ( 
 <TodoDay 
 key={todo.text} 
 text={todo.text}
