@@ -1,9 +1,11 @@
 import React from "react";
 
-function TodoSearch() {
-const [searchValue, setSearchValue] = React.
-useState('');
-console.log('Usuarios made the day ' + searchValue)
+function TodoSearch({
+
+searchValue,
+setSearchValue,
+}) {
+
 
 
     return(
